@@ -1,0 +1,15 @@
+.page {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow: visible;
+
+  &--active {
+    overflow: hidden;
+  }
+
+  @media (max-width: $desktop-width) {
+    &--active-menu {
+      overflow: hidden;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -14,237 +14,259 @@
 </head>
 
 <body>
-  <header class="header">
-    <a class="header__logo">
-      <svg width="85" height="36" role="img" aria-label="logo Gussi">
-        <use xlink:href="img/stack.svg#logo"></use>
-      </svg>
-    </a>
-    <div class="header__slider">
-      <div class="header__slider-item">
-        <div class="header__wrapper-img">
-          <picture>
-            <!-- 1х: 600px; 2x: 1200px -->
-            <source type="image/webp" srcset="img/light-coat.webp, img/light-coat@2.webp 2x">
-            <!-- 1х: 720px; 2x: 1440px -->
-            <source type="image/webp" media="(min-width: 1024px)"
-              srcset="img/light-coat_tab.webp, img/light-coat_tab@2.webp 2x">
-            <!-- 1х: 324px; 2x: 648px -->
-            <source type="image/webp" media="(min-width: 320px)"
-              srcset="img/light-coat_mob.webp, img/light-coat_mob@2.webp 2x">
 
-            <!-- 1х: 600px; 2x: 1200px -->
-            <img src="img/light-coat.jpg" srcset="img/light-coat@2.jpg 2x" width="320" height="600"
-              alt="The new Jewellery collection">
-          </picture>
-        </div>
-        <h2>Light coat</h2>
-        <p>More cotton, more freedom</p>
-      </div>
-      <div class="header__slider-item">
-        <div class="header__wrapper-img">
-          <picture>
-            <!-- 1х: 600px; 2x: 1200px -->
-            <source type="image/webp" srcset="img/sandy-longsleeve.webp, img/sandy-longsleeve@2.webp 2x">
-            <!-- 1х: 720px; 2x: 1440px -->
-            <source type="image/webp" media="(min-width: 1024px)"
-              srcset="img/sandy-longsleeve_tab.webp, img/sandy-longsleeve_tab@2.webp 2x">
-            <!-- 1х: 324px; 2x: 648px -->
-            <source type="image/webp" media="(min-width: 320px)"
-              srcset="img/sandy-longsleeve_mob.webp, img/sandy-longsleeve_mob@2.webp 2x">
+  <div class="body-wrapper">
+    <header class="header">
+      <a class="header__logo">
+        <svg width="95" height="53" role="img" aria-label="logo Gussi">
+          <use xlink:href="img/stack.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="header__slider swiper-container">
+        <div class="header__wrapper-slider swiper-wrapper">
 
-            <!-- 1х: 600px; 2x: 1200px -->
-            <img src="img/sandy-longsleeve.jpg" srcset="img/sandy-longsleeve@2.jpg 2x" width="320" height="600"
-              alt="The new Jewellery collection">
-          </picture>
-        </div>
-        <h2>Sandy longsleeve</h2>
-        <p>More cotton, more freedom</p>
-      </div>
-      <div class="header__slider-item">
-        <div class="header__wrapper-img">
-          <picture>
-            <!-- 1х: 600px; 2x: 1200px -->
-            <source type="image/webp" srcset="img/lime-jacket.webp, img/lime-jacket@2.webp 2x">
-            <!-- 1х: 720px; 2x: 1440px -->
-            <source type="image/webp" media="(min-width: 1024px)"
-              srcset="img/lime-jacket_tab.webp, img/lime-jacket_tab@2.webp 2x">
-            <!-- 1х: 324px; 2x: 648px -->
-            <source type="image/webp" media="(min-width: 320px)"
-              srcset="img/lime-jacket_mob.webp, img/lime-jacket_mob@2.webp 2x">
+          <div class="header__slider-item swiper-slide">
+            <div class="header__wrapper-img">
+              <picture>
+                <!-- 1х: 600px; 2x: 1200px -->
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/light-coat.webp, img/light-coat@2.webp 2x">
+                <!-- 1х: 720px; 2x: 1440px -->
+                <source type="image/webp" media="(min-width: 720px)"
+                  srcset="img/light-coat_tab.webp, img/light-coat_tab@2.webp 2x">
+                <!-- 1х: 320px; 2x: 640px -->
+                <source type="image/webp" srcset="img/light-coat_mob.webp, img/light-coat_mob@2.webp 2x">
 
-            <!-- 1х: 600px; 2x: 1200px -->
-            <img src="img/lime-jacket.jpg" srcset="img/lime-jacket@2.jpg 2x" width="320" height="600"
-              alt="The new Jewellery collection">
-          </picture>
-        </div>
-        <h2>Lime jacket</h2>
-        <p>More cotton, more freedom</p>
-      </div>
-    </div>
-  </header>
-  <main>
-    <h1 class="visually-hidden">Gussi collection</h1>
-    <section class="new-collection">
-      <h2>New collection</h2>
-      <h3>Gussi light coat</h3>
-      <p>It takes you from the party to the
-        after party with its fashion-forward
-        styles. A playfull blendof retro and
-        modern outdoor design.</p>
-      <form class="new-collection__form" action="#" method="post">
-        <fieldset class="">
-          <legend>COLOUR</legend>
-          <ul>
-            <li class="new-collection__form-wrapper-input">
-              <input type="radio" name="group-colour" id="black" checked>
-              <label for="black">black</label>
-            </li>
-            <li class="new-collection__form-wrapper-input">
-              <input type="radio" name="group-colour" id="gray">
-              <label for="gray">gray</label>
-            </li>
-            <li class="new-collection__form-wrapper-input">
-              <input type="radio" name="group-colour" id="blue-dark">
-              <label for="blue-dark">blue-dark</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="">
-          <legend>Size</legend>
-          <ul>
-            <li class="new-collection__form-wrapper-input">
-              <input type="radio" name="group-size" id="xs">
-              <label for="xsId">XS</label>
-            </li>
-            <li class="new-collection__form-wrapper-input">
-              <input type="radio" name="group-size" id="sId" checked>
-              <label for="sId">S</label>
-            </li>
-            <li class="new-collection__form-wrapper-input">
-              <input type="radio" name="group-size" id="mId">
-              <label for="mId">M</label>
-            </li>
-            <li class="new-collection__form-wrapper-input">
-              <input type="radio" name="group-size" id="lId">
-              <label for="lId">L</label>
-            </li>
-          </ul>
-        </fieldset>
-        <a href="#">Size guide</a>
-        <fieldset>
-          <legend>Quantity</legend>
-          <div class="stepper ">
-            <input type="number" name="number" min="1" max="10" id="number" value="1">
-            <label for="number"></label>
+                <!-- 1х: 600px; 2x: 1200px -->
+                <img src="img/light-coat.jpg" srcset="img/light-coat@2.jpg 2x" width="320" height="600" alt="Light coat">
+              </picture>
+            </div>
+            <p class="header__slider-item-text">Light coat</p>
           </div>
-          <div class="stepper-control">
-            <button class="down" type="button"></button>
-            <button class="up" type="button"></button>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Cost</legend>
-          <div class="stepper ">
-            <label for="cost">$</label>
-            <input type="number" name="cost" id="cost" value="120.00">
-          </div>
-        </fieldset>
-        <div>
-          <h4>Order now</h4>
-          <p>Look out for its standout party dresses, feminine details, statement jackets and cool denim including
-            skinny-cut jeans and cute denim shorts, which sit alongside its directional footwear and swimwear ranges.
-          </p>
-        </div>
-        <button type="submit">Order now</button>
-      </form>
-    </section>
-    <section class="services">
-      <h2 class="visually-hidden">Services</h2>
-      <ul>
-        <li>
-          <button type="button">Delivery</button>
-          <p>Delivered on or before Monday, 25 February 2019
-            Note: Subject to placing your order before specific cut-off times. Details available in checkout.</p>
-          <p>For free delivery – spend over £18.08</p>
-        </li>
-        <li>
-          <button type="button">Return</button>
-          <p>Return through your local Boxberry store available in over 2,300 locations.
-            You can create your return on the carrier website by clicking the create return link.
-            Open 7 days a week, early until late.</p>
-        </li>
-      </ul>
-    </section>
-    <section class="similar-collections">
-      <h2>Similar Collections</h2>
-      <ul>
-        <li class="similar-collections__wrapper-img">
-          <picture>
-            <!-- 1х: 600px; 2x: 1200px -->
-            <source type="image/webp" srcset="img/kingsman-style_desk.webp, img/kingsman-style_desk@2.webp 2x">
-            <!-- 1х: 720px; 2x: 1440px -->
-            <source type="image/webp" media="(min-width: 1024px)"
-              srcset="img/kingsman-style_tab.webp, img/kingsman-style_tab@2.webp 2x">
-            <!-- 1х: 324px; 2x: 648px -->
-            <source type="image/webp" media="(min-width: 320px)"
-              srcset="img/kingsman-style_mob.webp, img/kingsman-style_mob@2.webp 2x">
+          <div class="header__slider-item swiper-slide">
+            <div class="header__wrapper-img">
+              <picture>
+                <!-- 1х: 600px; 2x: 1200px -->
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/sandy-longsleeve.webp, img/sandy-longsleeve@2.webp 2x">
+                <!-- 1х: 720px; 2x: 1440px -->
+                <source type="image/webp" media="(min-width: 720px)"
+                  srcset="img/sandy-longsleeve_tab.webp, img/sandy-longsleeve_tab@2.webp 2x">
+                <!-- 1х: 324px; 2x: 648px -->
+                <source type="image/webp" srcset="img/sandy-longsleeve_mob.webp, img/sandy-longsleeve_mob@2.webp 2x">
 
-            <!-- 1х: 296px; 2x: 592px -->
-            <img src="img/kingsman-style_desk.jpg" srcset="img/kingsman-style_desk@2.jpg 2x" width="296" height="160"
-              alt="The new Jewellery collection">
-          </picture>
-        </li>
-        <li class="similar-collections__wrapper-img">
-          <picture>
-            <!-- 1х: 600px; 2x: 1200px -->
-            <source type="image/webp" srcset="img/denim-goddess_desk.webp, img/denim-goddess_desk@2.webp 2x">
-            <!-- 1х: 720px; 2x: 1440px -->
-            <source type="image/webp" media="(min-width: 1024px)"
-              srcset="img/denim-goddess_tab.webp, img/denim-goddess_tab@2.webp 2x">
-            <!-- 1х: 324px; 2x: 648px -->
-            <source type="image/webp" media="(min-width: 320px)"
-              srcset="img/denim-goddess_mob.webp, img/denim-goddess_mob@2.webp 2x">
+                <!-- 1х: 600px; 2x: 1200px -->
+                <img src="img/sandy-longsleeve.jpg" srcset="img/sandy-longsleeve@2.jpg 2x" width="320" height="600"
+                  alt="Sandy longsleeve">
+              </picture>
+            </div>
+            <p class="header__slider-item-text">Sandy longsleeve</p>
+          </div>
+          <div class="header__slider-item swiper-slide">
+            <div class="header__wrapper-img">
+              <picture>
+                <!-- 1х: 600px; 2x: 1200px -->
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/lime-jacket.webp, img/lime-jacket@2.webp 2x">
+                <!-- 1х: 720px; 2x: 1440px -->
+                <source type="image/webp" media="(min-width: 720px)"
+                  srcset="img/lime-jacket_tab.webp, img/lime-jacket_tab@2.webp 2x">
+                <!-- 1х: 324px; 2x: 648px -->
+                <source type="image/webp" srcset="img/lime-jacket_mob.webp, img/lime-jacket_mob@2.webp 2x">
 
-            <!-- 1х: 296px; 2x: 592px -->
-            <img src="img/denim-goddess_desk.jpg" srcset="img/denim-goddess_desk@2.jpg 2x" width="296" height="160"
-              alt="The new Jewellery collection">
-          </picture>
-        </li>
-      </ul>
-    </section>
-    <section class="mailings">
-      <h2>Subscribe our newsletter</h2>
-      <p>Get notified about new collections of Gussi Store</p>
-      <form class="mailings__form" action="#" method="post">
-        <div class="mailings__form-wrapper-input">
-          <label for="name"></label>
-          <input type="text" name="name" id="name" placeholder="Enter your name">
+                <!-- 1х: 600px; 2x: 1200px -->
+                <img src="img/lime-jacket.jpg" srcset="img/lime-jacket@2.jpg 2x" width="320" height="600" alt="Lime jacket">
+              </picture>
+            </div>
+            <p class="header__slider-item-text">Lime jacket</p>
+          </div>
+
         </div>
-        <div class="mailings__form-wrapper-input">
-          <label for="email"></label>
-          <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+
+      </div>
+      <p class="header__slider-text">More cotton, more freedom</p>
+      <div class="header__slider-control">
+
+        <div class="header__slider-buttons">
+          <button class="header__slider-button header__slider-button--prev" aria-label="Previous"></button>
+          <button class="header__slider-button header__slider-button--next" aria-label="Next"></button>
         </div>
-        <div>
-          <p>Choose your gender:</p>
+
+        <div class="header__slider-pagination slider-pagination"></div>
+      </div>
+
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">Gussi collection</h1>
+      <section class="new-collection">
+        <h2>New collection</h2>
+        <div class="new-collection__top-text">
+          <h3>Gussi light coat</h3>
+          <p>It takes you from the party to the after party with its fashion-forward styles. A playfull blendof retro and
+            modern outdoor design.</p>
+        </div>
+        <form class="new-collection__form" action="#" method="post">
+          <fieldset class="new-collection__form-selection">
+            <legend>COLOUR</legend>
+            <ul class="new-collection__form-block new-collection__form-block--color">
+              <li class="new-collection__form-item">
+                <input type="radio" name="group-colour" id="black" checked>
+                <label for="black">black</label>
+              </li>
+              <li class="new-collection__form-item">
+                <input type="radio" name="group-colour" id="gray">
+                <label for="gray">gray</label>
+              </li>
+              <li class="new-collection__form-item">
+                <input type="radio" name="group-colour" id="blue-dark">
+                <label for="blue-dark">blue-dark</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="new-collection__form-selection">
+            <legend>Size</legend>
+            <ul class="new-collection__form-block new-collection__form-block--size">
+              <li class="new-collection__form-item">
+                <input type="radio" name="group-size" id="xsId">
+                <label for="xsId">XS</label>
+              </li>
+              <li class="new-collection__form-item">
+                <input type="radio" name="group-size" id="sId" checked>
+                <label for="sId">S</label>
+              </li>
+              <li class="new-collection__form-item">
+                <input type="radio" name="group-size" id="mId">
+                <label for="mId">M</label>
+              </li>
+              <li class="new-collection__form-item">
+                <input type="radio" name="group-size" id="lId">
+                <label for="lId">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <a class="new-collection__form-link-guide" href="#">Size guide</a>
+          <fieldset class="new-collection__form-block new-collection__form-block--quantity">
+            <legend>Quantity</legend>
+            <div class="new-collection__form-stepper">
+              <input type="number" name="number" min="1" max="10" id="number" value="1">
+              <label for="number"></label>
+            </div>
+            <div class="new-collection__form-stepper-control">
+              <button class="new-collection__form-control new-collection__form-control--down" type="button"></button>
+              <button class="new-collection__form-control new-collection__form-control--up" type="button"></button>
+            </div>
+          </fieldset>
+          <fieldset class="new-collection__form-cost">
+            <p>Cost</p>
+            <div class="new-collection__form-cost">
+              <label for="cost">$</label>
+              <input type="number" name="cost" id="cost" value="120.00">
+            </div>
+          </fieldset>
+          <div class="new-collection__form-text">
+            <h4>Order now</h4>
+            <p>Look out for its standout party dresses, feminine details, statement jackets and cool denim including
+              skinny-cut jeans and cute denim shorts, which sit alongside its directional footwear and swimwear ranges.
+            </p>
+          </div>
+          <button class="new-collection__form-button" type="submit">Order now</button>
+        </form>
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Services</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <button class="services__button" type="button">Delivery</button>
+            <p>Delivered on or before Monday, 25 February 2019
+              Note: Subject to placing your order before specific cut-off times. Details available in checkout.</p>
+            <p>For free delivery – spend over £18.08</p>
+          </li>
+          <li class="services__item">
+            <button class="services__button" type="button">Return</button>
+            <p>Return through your local Boxberry store available in over 2,300 locations.
+              You can create your return on the carrier website by clicking the create return link.
+              Open 7 days a week, early until late.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="similar-collections">
+        <h2>Similar Collections</h2>
+        <ul>
+          <li class="similar-collections__wrapper-img">
+            <picture>
+              <!-- 1х: 600px; 2x: 1200px -->
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/kingsman-style_desk.webp, img/kingsman-style_desk@2.webp 2x">
+              <!-- 1х: 720px; 2x: 1440px -->
+              <source type="image/webp" media="(min-width: 720px)"
+                srcset="img/kingsman-style_tab.webp, img/kingsman-style_tab@2.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source type="image/webp" srcset="img/kingsman-style_mob.webp, img/kingsman-style_mob@2.webp 2x">
+
+              <!-- 1х: 296px; 2x: 592px -->
+              <img src="img/kingsman-style_desk.jpg" srcset="img/kingsman-style_desk@2.jpg 2x" width="296" height="160"
+                alt="Kingsman style">
+            </picture>
+            <strong>Kingsman style</strong>
+            <p>More silk, more freedom</p>
+          </li>
+          <li class="similar-collections__wrapper-img">
+            <picture>
+              <!-- 1х: 600px; 2x: 1200px -->
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/denim-goddess_desk.webp, img/denim-goddess_desk@2.webp 2x">
+              <!-- 1х: 720px; 2x: 1440px -->
+              <source type="image/webp" media="(min-width: 720px)"
+                srcset="img/denim-goddess_tab.webp, img/denim-goddess_tab@2.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source type="image/webp" srcset="img/denim-goddess_mob.webp, img/denim-goddess_mob@2.webp 2x">
+
+              <!-- 1х: 296px; 2x: 592px -->
+              <img src="img/denim-goddess_desk.jpg" srcset="img/denim-goddess_desk@2.jpg 2x" width="296" height="160"
+                alt="Denim goddess">
+            </picture>
+            <strong>Denim goddess</strong>
+            <p>More denim, more freedom</p>
+          </li>
+        </ul>
+      </section>
+      <section class="mailings">
+        <h2>Subscribe our newsletter</h2>
+        <p>Get notified about new collections of Gussi Store</p>
+        <form class="mailings__form" action="#" method="post">
+          <div class="mailings__form-wrapper-input">
+            <label class="visually-hidden" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mailings__form-wrapper-input">
+            <label class="visually-hidden" for="email">e-mail</label>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+          </div>
           <div class="mailings__form-wrapper-radio">
-            <input type="radio" name="droup-gender" id="male" checked>
-            <label for="male">Male</label>
+            <p>Choose your gender:</p>
+            <div class="mailings__form-wrapper-radio">
+              <input type="radio" name="droup-gender" id="male" checked>
+              <label for="male">Male</label>
+            </div>
+            <div class="mailings__form-wrapper-radio">
+              <input type="radio" name="droup-gender" id="female">
+              <label for="female">Female</label>
+            </div>
           </div>
-          <div class="mailings__form-wrapper-radio">
-            <input type="radio" name="droup-gender" id="female">
-            <label for="female">Female</label>
+          <div class="mailings__form-details">
+            <input type="checkbox" name="details" id="details" checked>
+            <label for="details">Look out for its standout party dresses, feminine details</label>
           </div>
-        </div>
-        <div class="details">
-          <input type="checkbox" name="details" checked>
-          <label for="">Look out for its standout party dresses, feminine details</label>
-        </div>
-        <button type="submit">Subscribe Gussi</button>
-      </form>
-    </section>
-  </main>
-  
+          <button class="mailings__form-button" type="submit">Subscribe Gussi</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+
+  <script src="js/vendor.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

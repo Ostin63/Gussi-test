@@ -14,6 +14,12 @@ const webp = require('gulp-webp');
 const svgsprite = require('gulp-svg-sprite');
 const del = require('del');
 const sync = require('browser-sync').create();
+const concat = require('gulp-concat');
+
+const vendorScripts = () => src('source/js/vendor/*.js')
+  .pipe(concat('vendor.js'))
+  .pipe(dest('build/js'));
+
 
 const styles = () => src('source/sass/style.scss')
   .pipe(plumber())
@@ -121,6 +127,7 @@ const build = series(
     svgstack,
     images,
     createWebp,
+    vendorScripts,
   ),
 );
 
@@ -136,6 +143,7 @@ exports.default = series(
     images,
     svgstack,
     createWebp,
+    vendorScripts,
   ),
   series(
     server,
